@@ -1,0 +1,5 @@
+D:\WaterRepo\Advance-Plan\WaterSystem_v1\ObjectListViewDemo\SparkleLibrary\bin\Debug\SparkleLibrary.dll
+D:\WaterRepo\Advance-Plan\WaterSystem_v1\ObjectListViewDemo\SparkleLibrary\bin\Debug\SparkleLibrary.pdb
+D:\WaterRepo\Advance-Plan\WaterSystem_v1\ObjectListViewDemo\SparkleLibrary\obj\Debug\SparkleLibrary2012.csprojResolveAssemblyReference.cache
+D:\WaterRepo\Advance-Plan\WaterSystem_v1\ObjectListViewDemo\SparkleLibrary\obj\Debug\SparkleLibrary.dll
+D:\WaterRepo\Advance-Plan\WaterSystem_v1\ObjectListViewDemo\SparkleLibrary\obj\Debug\SparkleLibrary.pdb

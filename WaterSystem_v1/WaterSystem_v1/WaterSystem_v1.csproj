@@ -1,0 +1,559 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BE09A0B2-A7B4-4075-83CD-ECCDA43783DC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WaterSystem_v1</RootNamespace>
+    <AssemblyName>WaterSystem_v1</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="LiveCharts.WinForms, Version=0.9.7.1, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.WinForms.0.9.7.1\lib\net45\LiveCharts.WinForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmAccountDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAccountDetail.Designer.cs">
+      <DependentUpon>FrmAccountDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddEditAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddEditAccount.Designer.cs">
+      <DependentUpon>FrmAddEditAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddEditBoxwiseBottleQuantity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddEditBoxwiseBottleQuantity.Designer.cs">
+      <DependentUpon>FrmAddEditBoxwiseBottleQuantity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddEditCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddEditCustomer.Designer.cs">
+      <DependentUpon>FrmAddEditCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddEditEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddEditEmployee.Designer.cs">
+      <DependentUpon>FrmAddEditEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddEditItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddEditItem.Designer.cs">
+      <DependentUpon>FrmAddEditItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddEditMeasurement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddEditMeasurement.Designer.cs">
+      <DependentUpon>FrmAddEditMeasurement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddEditRoot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddEditRoot.Designer.cs">
+      <DependentUpon>FrmAddEditRoot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddEditRowMaterial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddEditRowMaterial.Designer.cs">
+      <DependentUpon>FrmAddEditRowMaterial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddEditSubAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddEditSubAccount.Designer.cs">
+      <DependentUpon>FrmAddEditSubAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddEditSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddEditSupplier.Designer.cs">
+      <DependentUpon>FrmAddEditSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddEditTransportation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddEditTransportation.Designer.cs">
+      <DependentUpon>FrmAddEditTransportation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddEditUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddEditUser.Designer.cs">
+      <DependentUpon>FrmAddEditUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddEditVechile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddEditVechile.Designer.cs">
+      <DependentUpon>FrmAddEditVechile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBillingInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBillingInvoice.Designer.cs">
+      <DependentUpon>FrmBillingInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBoxwiseBottleQuantityDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBoxwiseBottleQuantityDetail.Designer.cs">
+      <DependentUpon>FrmBoxwiseBottleQuantityDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCustomerDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCustomerDetail.Designer.cs">
+      <DependentUpon>FrmCustomerDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDashboardContainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDashboardContainer.Designer.cs">
+      <DependentUpon>FrmDashboardContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDebitCreditExpenses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDebitCreditExpenses.Designer.cs">
+      <DependentUpon>FrmDebitCreditExpenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDebitCreditExpensesContainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDebitCreditExpensesContainer.Designer.cs">
+      <DependentUpon>FrmDebitCreditExpensesContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEmployeeDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEmployeeDetail.Designer.cs">
+      <DependentUpon>FrmEmployeeDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmExpenses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExpenses.Designer.cs">
+      <DependentUpon>FrmExpenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInvoiceApprove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInvoiceApprove.Designer.cs">
+      <DependentUpon>FrmInvoiceApprove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInvoiceApproveBlock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInvoiceApproveBlock.Designer.cs">
+      <DependentUpon>FrmInvoiceApproveBlock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInvoiceApproveTabs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInvoiceApproveTabs.Designer.cs">
+      <DependentUpon>FrmInvoiceApproveTabs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmItemDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmItemDetails.Designer.cs">
+      <DependentUpon>FrmItemDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMeasurementDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMeasurementDetail.Designer.cs">
+      <DependentUpon>FrmMeasurementDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProductionManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProductionManage.Designer.cs">
+      <DependentUpon>FrmProductionManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRootDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRootDetail.Designer.cs">
+      <DependentUpon>FrmRootDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRowMaterialDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRowMaterialDetail.Designer.cs">
+      <DependentUpon>FrmRowMaterialDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPaymentTransaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPaymentTransaction.Designer.cs">
+      <DependentUpon>FrmPaymentTransaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSalesTransport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSalesTransport.Designer.cs">
+      <DependentUpon>FrmSalesTransport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSubAccountDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSubAccountDetail.Designer.cs">
+      <DependentUpon>FrmSubAccountDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSupplierDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSupplierDetail.Designer.cs">
+      <DependentUpon>FrmSupplierDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTransactionContainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTransactionContainer.Designer.cs">
+      <DependentUpon>FrmTransactionContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTransportationDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTransportationDetail.Designer.cs">
+      <DependentUpon>FrmTransportationDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUserDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUserDetail.Designer.cs">
+      <DependentUpon>FrmUserDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVechileDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVechileDetail.Designer.cs">
+      <DependentUpon>FrmVechileDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\CalculationHelper.cs" />
+    <Compile Include="Helpers\ChartHelper.cs" />
+    <Compile Include="Helpers\DataHelper.cs" />
+    <Compile Include="Helpers\FormHelper.cs" />
+    <Compile Include="FrmDashboardCharts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDashboardCharts.Designer.cs">
+      <DependentUpon>FrmDashboardCharts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInventoryContainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInventoryContainer.Designer.cs">
+      <DependentUpon>FrmInventoryContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMasterContainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMasterContainer.Designer.cs">
+      <DependentUpon>FrmMasterContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logs\Logger.cs" />
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FrmTransportationContainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTransportationContainer.Designer.cs">
+      <DependentUpon>FrmTransportationContainer.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FrmAccountDetail.resx">
+      <DependentUpon>FrmAccountDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddEditAccount.resx">
+      <DependentUpon>FrmAddEditAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddEditBoxwiseBottleQuantity.resx">
+      <DependentUpon>FrmAddEditBoxwiseBottleQuantity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddEditCustomer.resx">
+      <DependentUpon>FrmAddEditCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddEditEmployee.resx">
+      <DependentUpon>FrmAddEditEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddEditItem.resx">
+      <DependentUpon>FrmAddEditItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddEditMeasurement.resx">
+      <DependentUpon>FrmAddEditMeasurement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddEditRoot.resx">
+      <DependentUpon>FrmAddEditRoot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddEditRowMaterial.resx">
+      <DependentUpon>FrmAddEditRowMaterial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddEditSubAccount.resx">
+      <DependentUpon>FrmAddEditSubAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddEditSupplier.resx">
+      <DependentUpon>FrmAddEditSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddEditTransportation.resx">
+      <DependentUpon>FrmAddEditTransportation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddEditUser.resx">
+      <DependentUpon>FrmAddEditUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddEditVechile.resx">
+      <DependentUpon>FrmAddEditVechile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBillingInvoice.resx">
+      <DependentUpon>FrmBillingInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBoxwiseBottleQuantityDetail.resx">
+      <DependentUpon>FrmBoxwiseBottleQuantityDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCustomerDetail.resx">
+      <DependentUpon>FrmCustomerDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDashboardCharts.resx">
+      <DependentUpon>FrmDashboardCharts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDashboardContainer.resx">
+      <DependentUpon>FrmDashboardContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDebitCreditExpenses.resx">
+      <DependentUpon>FrmDebitCreditExpenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDebitCreditExpensesContainer.resx">
+      <DependentUpon>FrmDebitCreditExpensesContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEmployeeDetail.resx">
+      <DependentUpon>FrmEmployeeDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmExpenses.resx">
+      <DependentUpon>FrmExpenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInventoryContainer.resx">
+      <DependentUpon>FrmInventoryContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInvoiceApprove.resx">
+      <DependentUpon>FrmInvoiceApprove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInvoiceApproveBlock.resx">
+      <DependentUpon>FrmInvoiceApproveBlock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInvoiceApproveTabs.resx">
+      <DependentUpon>FrmInvoiceApproveTabs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmItemDetails.resx">
+      <DependentUpon>FrmItemDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMasterContainer.resx">
+      <DependentUpon>FrmMasterContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMeasurementDetail.resx">
+      <DependentUpon>FrmMeasurementDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProductionManage.resx">
+      <DependentUpon>FrmProductionManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRootDetail.resx">
+      <DependentUpon>FrmRootDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRowMaterialDetail.resx">
+      <DependentUpon>FrmRowMaterialDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPaymentTransaction.resx">
+      <DependentUpon>FrmPaymentTransaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSalesTransport.resx">
+      <DependentUpon>FrmSalesTransport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSubAccountDetail.resx">
+      <DependentUpon>FrmSubAccountDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSupplierDetail.resx">
+      <DependentUpon>FrmSupplierDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTransactionContainer.resx">
+      <DependentUpon>FrmTransactionContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTransportationDetail.resx">
+      <DependentUpon>FrmTransportationDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUserDetail.resx">
+      <DependentUpon>FrmUserDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVechileDetail.resx">
+      <DependentUpon>FrmVechileDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\ImageResource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ImageResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTransportationContainer.resx">
+      <DependentUpon>FrmTransportationContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\ImageResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ImageResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ObjectListViewDemo\ObjectListView\ObjectListView2012.csproj">
+      <Project>{18feda0c-d147-4286-b39a-01204808106a}</Project>
+      <Name>ObjectListView2012</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ToggleSwitch\ToggleSwitch.csproj">
+      <Project>{49b88ffa-f02c-4709-ba65-9f8996444ecd}</Project>
+      <Name>ToggleSwitch</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WaterSystem_Common\WaterSystem_Common.csproj">
+      <Project>{bb3c978a-0436-41c9-b059-fe315ffb0b9c}</Project>
+      <Name>WaterSystem_Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WaterSystem_Manager\WaterSystem_Manager.csproj">
+      <Project>{529b4a2b-f05b-4f62-96cc-bb8144a1effd}</Project>
+      <Name>WaterSystem_Manager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WaterSystem_Model\WaterSystem_Models.csproj">
+      <Project>{934ece57-8110-4362-bc6c-9fab1fb5c221}</Project>
+      <Name>WaterSystem_Models</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Contents\plusIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Contents\plusico.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Contents\search.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Contents\clear.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Contents\active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Contents\inactive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Contents\Button-Delete.png" />
+    <Content Include="Contents\edit.png" />
+    <Content Include="Contents\icon.ico" />
+    <Content Include="Contents\Logo.png" />
+    <None Include="Contents\user.png" />
+    <None Include="Contents\transportation.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

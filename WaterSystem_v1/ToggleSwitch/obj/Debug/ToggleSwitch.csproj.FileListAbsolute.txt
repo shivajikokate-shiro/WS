@@ -1,0 +1,10 @@
+D:\ToggleSwitch\ToggleSwitch\bin\Debug\ToggleSwitch.dll
+D:\ToggleSwitch\ToggleSwitch\bin\Debug\ToggleSwitch.pdb
+D:\ToggleSwitch\ToggleSwitch\obj\Debug\ToggleSwitch.csprojResolveAssemblyReference.cache
+D:\ToggleSwitch\ToggleSwitch\obj\Debug\ToggleSwitch.dll
+D:\ToggleSwitch\ToggleSwitch\obj\Debug\ToggleSwitch.pdb
+D:\WaterRepo\Advance-Plan\WaterSystem_v1\ToggleSwitch\bin\Debug\ToggleSwitch.dll
+D:\WaterRepo\Advance-Plan\WaterSystem_v1\ToggleSwitch\bin\Debug\ToggleSwitch.pdb
+D:\WaterRepo\Advance-Plan\WaterSystem_v1\ToggleSwitch\obj\Debug\ToggleSwitch.csprojResolveAssemblyReference.cache
+D:\WaterRepo\Advance-Plan\WaterSystem_v1\ToggleSwitch\obj\Debug\ToggleSwitch.dll
+D:\WaterRepo\Advance-Plan\WaterSystem_v1\ToggleSwitch\obj\Debug\ToggleSwitch.pdb

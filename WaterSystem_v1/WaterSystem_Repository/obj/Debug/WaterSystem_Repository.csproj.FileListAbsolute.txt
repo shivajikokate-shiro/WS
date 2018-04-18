@@ -1,0 +1,10 @@
+D:\WaterRepo\Advance-Plan\WaterSystem_v1\WaterSystem_Repository\bin\Debug\WaterSystem_Repository.dll.config
+D:\WaterRepo\Advance-Plan\WaterSystem_v1\WaterSystem_Repository\bin\Debug\WaterSystem_Repository.dll
+D:\WaterRepo\Advance-Plan\WaterSystem_v1\WaterSystem_Repository\bin\Debug\WaterSystem_Repository.pdb
+D:\WaterRepo\Advance-Plan\WaterSystem_v1\WaterSystem_Repository\bin\Debug\WaterSystem_Connection.dll
+D:\WaterRepo\Advance-Plan\WaterSystem_v1\WaterSystem_Repository\bin\Debug\WaterSystem_Model.dll
+D:\WaterRepo\Advance-Plan\WaterSystem_v1\WaterSystem_Repository\bin\Debug\WaterSystem_Connection.pdb
+D:\WaterRepo\Advance-Plan\WaterSystem_v1\WaterSystem_Repository\bin\Debug\WaterSystem_Model.pdb
+D:\WaterRepo\Advance-Plan\WaterSystem_v1\WaterSystem_Repository\obj\Debug\WaterSystem_Repository.csprojResolveAssemblyReference.cache
+D:\WaterRepo\Advance-Plan\WaterSystem_v1\WaterSystem_Repository\obj\Debug\WaterSystem_Repository.dll
+D:\WaterRepo\Advance-Plan\WaterSystem_v1\WaterSystem_Repository\obj\Debug\WaterSystem_Repository.pdb

@@ -1,0 +1,4 @@
+D:\WaterRepo\Advance-Plan\WaterSystem_v1\WaterSystem_Common\bin\Debug\WaterSystem_Common.dll
+D:\WaterRepo\Advance-Plan\WaterSystem_v1\WaterSystem_Common\bin\Debug\WaterSystem_Common.pdb
+D:\WaterRepo\Advance-Plan\WaterSystem_v1\WaterSystem_Common\obj\Debug\WaterSystem_Common.dll
+D:\WaterRepo\Advance-Plan\WaterSystem_v1\WaterSystem_Common\obj\Debug\WaterSystem_Common.pdb
